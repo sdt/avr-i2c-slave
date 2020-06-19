@@ -1,8 +1,5 @@
-- modify main.c to be consistent with modified API
-- modify README
-
-OPTINALLY : 
-- debug / make TW_ST_LAST_DATA work
+- modify main.c to be consistent with modified API (?? stil valid ??)
+- Check resetting TWCR is enough on TW_BUS_ERROR
 
 
 
