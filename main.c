@@ -1,5 +1,6 @@
 /* I2C Echo Example */
 #include "I2CSlave.h"
+#include <stdlib.h>
 
 #define I2C_ADDR 0x10
 
@@ -12,16 +13,16 @@ void I2C_received(uint8_t received_data)
 
 void I2C_requested()
 {
-  I2C_transmitByte(data);
+  i2c_slave_transmitByte(data);
 }
 
 void setup()
 {
   // set received/requested callbacks
-  I2C_setCallbacks(I2C_received, I2C_requested);
+  i2c_slave_setCallbacks(NULL, I2C_received/*, NULL,*/ I2C_requested);
 
   // init I2C
-  I2C_init(I2C_ADDR);
+  i2c_slave_init(I2C_ADDR);
 }
 
 int main()

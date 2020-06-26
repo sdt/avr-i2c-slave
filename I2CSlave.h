@@ -17,9 +17,10 @@ typedef enum {
 
 void i2c_slave_init(uint8_t address);
 void i2c_slave_stop(void);
+
 void i2c_slave_setCallbacks(void (*start)(void),      // callback for Slave Receive START Condition
                             void (*recv)(uint8_t),    // callback for ACKed Slave Receive Data
-                            void (*stop)(void),       // callback for Slave Receive STOP Condition
+                            //void (*stop)(void),       // callback for Slave Receive STOP Condition
                             void (*req)(request_t)    // callback for Slave Transmit (init, cont, done)
                            );
 
