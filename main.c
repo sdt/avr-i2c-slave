@@ -30,5 +30,9 @@ int main()
   setup();
 
   // Main program loop
-  while(1);
+  while(1) {
+      //ping 0x20
+      i2c_master_init(0x20, MasterTransmit);
+      i2c_master_done();
+  }
 }

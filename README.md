@@ -1,5 +1,14 @@
 # AVR I2C Slave Library
 
+## Work in progess
+
+I'm bringing this lib to full TWI peripheral control, meaning full either :
+- Master
+- Slave
+- Master/Slave (meaning multi-master bus configuration)
+
+## State of the art (i²c slave doc)
+
 This library provides interrupt-based I2C slave functionality for Atmel 8-bit microcontrollers equipped with a TWI peripheral. 
 
 It is somewhat based on an existing library found here: https://github.com/devthrash/I2C-slave-lib

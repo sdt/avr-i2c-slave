@@ -1,5 +1,1 @@
-- modify main.c to be consistent with modified API (?? stil valid ??)
-- Check resetting TWCR is enough on TW_BUS_ERROR
-
-
-
+- Improve debugging using bit banging and conditionnal compliation
