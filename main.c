@@ -19,7 +19,7 @@ void I2C_requested()
 void setup()
 {
   // set received/requested callbacks
-  i2c_slave_setCallbacks(NULL, I2C_received/*, NULL,*/ I2C_requested);
+  i2c_slave_setCallbacks(NULL, I2C_received, /*NULL,*/ I2C_requested);
 
   // init I2C
   i2c_slave_init(I2C_ADDR);
